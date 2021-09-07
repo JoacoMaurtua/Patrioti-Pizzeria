@@ -8,11 +8,7 @@ const PORT = 8000;
 
 
 
-
-
-
-
-
+app.use('/api',require('./routes/user.routes'));
 
 
 app.listen(PORT,()=>{
