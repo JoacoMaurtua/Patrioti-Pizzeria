@@ -6,7 +6,7 @@ const connectDB = async() =>{
   try{
     await mongoose.connect(dataBase, {
       useNewUrlParser: true,
-      useUnifiedTopoly:true
+      useUnifiedTopology:true
     });
 
     console.log(`2: Established connection with data base`);
@@ -16,3 +16,5 @@ const connectDB = async() =>{
     process.exit(1) // error opcional
   }
 }
+
+module.exports = connectDB;

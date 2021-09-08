@@ -1,2 +1,11 @@
 ###GET MESSAGE
 GET http://localhost:8000/api/message
+
+###CREATE USER
+POST http://localhost:8000/api/create
+Content-Type: application/json
+
+{
+  "firstName":"Joaquin",
+  "lastName":"Maurtua"
+}
