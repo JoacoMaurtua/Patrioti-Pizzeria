@@ -1,6 +1,7 @@
 import './App.css';
 import axios from 'axios';
 import React, {useState,useEffect} from 'react';
+import Form from './components/Form';
 
 function App() {
   const [message, setMessage] = useState("...Loading");
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <h1>This is my first full stack aplication</h1>
       <h2>This is my first message:{message}</h2>
+      <Form />
     </div>
   );
 }
